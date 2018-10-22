@@ -11,16 +11,16 @@ public class ArgsException extends Exception {
 
     public ArgsException(String message) { super(message); }
 
-    public ArgsException(ErrorCode errorCode) {
+    ArgsException(ErrorCode errorCode) {
         this.errorCode = errorCode;
     }
 
-    public ArgsException(ErrorCode errorCode, String errorParameter) {
+    ArgsException(ErrorCode errorCode, String errorParameter) {
         this.errorCode = errorCode;
         this.errorParameter = errorParameter;
     }
 
-    public ArgsException(ErrorCode errorCode, char errorArgumentId, String errorParameter) {
+    ArgsException(ErrorCode errorCode, char errorArgumentId, String errorParameter) {
         this.errorCode = errorCode;
         this.errorParameter = errorParameter;
         this.errorArgumentId = errorArgumentId;
